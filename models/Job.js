@@ -3,22 +3,28 @@ const Schema = mongoose.Schema
 
 const JobSchema = new Schema({
     job_title: {
-        type: String
+        type: String,
+        required: true
     },
     employer: {
-        type: String
+        type: String,
+        required: true
     },
     location: {
-        type: String
+        type: String,
+        required: true
     },
     job_type: {
-        type: String
+        type: String,
+        required: true
     },
     job_summary: {
-        type: String
+        type: String,
+        required: true
     },
     job_description: {
-        type: String
+        type: Array,
+        required: true
     }
 })
 
