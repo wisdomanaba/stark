@@ -2,17 +2,29 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const ApplicantSchema = new Schema({
-    firstname: {
-        type: String
+    first_name: {
+        type: String,
+        required: true
     },
-    middlename: {
-        type: String
+    middle_name: {
+        type: String,
+        required: true
+    },
+    last_name: {
+        type: String,
+        required: true
     },
     email: {
-        type: String
+        type: String,
+        required: true
     },
-    workhistory: {
-        type: Array
+    phone_number: {
+        type: String,
+        required: true
+    },
+    work_history: {
+        type: Array,
+        required: true
     }
 })
 

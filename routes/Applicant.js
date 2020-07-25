@@ -12,12 +12,12 @@ applicants.use(cors())
 // @access  Public
 applicants.post('/', (req, res) => {
     const data = {
-        firstname: req.body.firstname,
-        middlename: req.body.middlename,
-        lastname: req.body.lastname,
+        first_name: req.body.first_name,
+        middle_name: req.body.middle_name,
+        last_name: req.body.last_name,
         email: req.body.email,
-        phonenumber: req.body.phonenumber,
-        workhistory: req.body.workhistory
+        phone_number: req.body.phone_number,
+        work_history: req.body.work_history
     }
 
     const newApplicant = new Applicant(data)

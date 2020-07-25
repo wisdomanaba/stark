@@ -33,7 +33,7 @@ jobs.post('/', (req, res) => {
         })
 })
 
-// @route   GET applicant/
+// @route   GET job/
 // @desc    Get All jobs
 // @access  Public
 jobs.get('/', (req, res) => {
@@ -50,7 +50,9 @@ jobs.get('/', (req, res) => {
           })
 })
 
-
+// @route   GET job/:id
+// @desc    Get job by id
+// @access  Public
 jobs.get("/:id", async (req, res) => {
       let { id } = req.params
 
